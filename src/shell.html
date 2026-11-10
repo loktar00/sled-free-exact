@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>SLED FREE</title>
+<link rel="icon" href="data:,">
+<style>
+html,body{margin:0;height:100%;overflow:hidden;background:#d6ddf0;touch-action:none;-webkit-user-select:none;user-select:none}
+canvas{position:fixed;left:0;top:0;display:block;image-rendering:pixelated;image-rendering:crisp-edges;image-rendering:pixelated}
+#hud{pointer-events:none}
+#lost{position:fixed;left:0;top:0;right:0;bottom:0;display:none;align-items:center;justify-content:center;background:#4a3429;color:#eef2f9;font:bold 20px monospace;text-align:center;z-index:9}
+#touch{display:none}
+.tb{position:fixed;bottom:4vh;width:17vmin;height:17vmin;border-radius:3vmin;background:rgba(74,52,41,.28);border:.6vmin solid rgba(238,242,249,.55);box-sizing:border-box;z-index:5}
+.tb:after{content:"";position:absolute;left:50%;top:50%;border:3vmin solid transparent}
+#bl{left:3vw}#bl:after{border-right-color:rgba(238,242,249,.8);margin:-3vmin 0 0 -4.5vmin}
+#br{left:calc(3vw + 20vmin)}#br:after{border-left-color:rgba(238,242,249,.8);margin:-3vmin 0 0 -1.5vmin}
+#bj{right:3vw;border-radius:50%}#bj:after{border:0;width:6vmin;height:6vmin;border-radius:50%;background:rgba(238,242,249,.8);margin:-3vmin 0 0 -3vmin}
+#bt{right:calc(3vw + 20vmin)}#bt:after{border-top-color:rgba(238,242,249,.8);margin:-1.5vmin 0 0 -3vmin}
+#bb{right:calc(3vw + 20vmin);bottom:calc(4vh + 20vmin)}#bb:after{border-bottom-color:rgba(238,242,249,.8);margin:-4.5vmin 0 0 -3vmin}
+</style>
+</head>
+<body>
+<canvas id="gl"></canvas>
+<canvas id="hud"></canvas>
+<div id="touch"><div class="tb" id="bl"></div><div class="tb" id="br"></div><div class="tb" id="bb"></div><div class="tb" id="bt"></div><div class="tb" id="bj"></div></div>
+<div id="lost">THE GRAPHICS CONTEXT WAS LOST<br>RELOAD THE PAGE TO SLED AGAIN</div>
+<script>
+/*THREE*/
+</script>
+<script>
+/*GAME*/
+</script>
+</body>
+</html>
